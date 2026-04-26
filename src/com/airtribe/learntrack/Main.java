@@ -468,6 +468,7 @@ public class Main {
     private static void viewStatistics() {
         System.out.println("\n--- System Statistics ---");
         System.out.println("Total Students: " + studentService.getTotalStudents());
+        System.out.println("Active Students: " + studentService.getActiveStudentsCount());
         System.out.println("Total Courses: " + courseService.getTotalCourses());
         System.out.println("Total Enrollments: " + enrollmentService.getTotalEnrollments());
     }

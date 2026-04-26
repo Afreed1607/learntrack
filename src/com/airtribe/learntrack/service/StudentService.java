@@ -66,6 +66,10 @@ public class StudentService {
         return studentRepository.getTotalStudents();
     }
 
+    public int getActiveStudentsCount() {
+        return studentRepository.getActiveStudentsCount();
+    }
+
     public void displayAllStudents() {
         List<Student> students = getAllStudents();
         if (students.isEmpty()) {

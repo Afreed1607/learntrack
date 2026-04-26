@@ -51,6 +51,16 @@ public class StudentRepository {
         return students.size();
     }
 
+    public int getActiveStudentsCount() {
+        int activeCount = 0;
+        for (Student student : students) {
+            if (student.isActive()) {
+                activeCount++;
+            }
+        }
+        return activeCount;
+    }
+
     public void clear() {
         students.clear();
     }
